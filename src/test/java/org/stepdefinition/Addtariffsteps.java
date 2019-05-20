@@ -1,24 +1,23 @@
-package org.stepdefinition;
-
-import java.util.List;
-
-import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-
-public class Addtariffsteps {
-	static WebDriver driver;
+/*
+ * package org.stepdefinition;
+ * 
+ * import java.util.List;
+ * 
+ * import org.junit.Assert; import org.openqa.selenium.Alert; import
+ * org.openqa.selenium.By; import org.openqa.selenium.WebDriver; import
+ * org.openqa.selenium.WebElement; import
+ * org.openqa.selenium.chrome.ChromeDriver;
+ * 
+ * import cucumber.api.java.en.Given; import cucumber.api.java.en.Then; import
+ * cucumber.api.java.en.When;
+ * 
+ * public class Addtariffsteps {
+ */
+	/*static WebDriver driver;
 
 	@Given("the user is in addTrafic page")
 	public void the_user_is_in_addTrafic_page() {
-		System.setProperty("webdriver.chrome.driver",
+		System.setProperty("webdriver.chrome.drizver",
 				"C:\\UsersLakshmi\\CloneTry\\eclipse-workspace\\cucumber\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/telecom/");
@@ -48,11 +47,11 @@ public class Addtariffsteps {
 		Assert.assertTrue(driver.findElement(By.tagName("h1")).isDisplayed());
 	}
 
-	/*
+	
 	 * @Given("The user is in addTraffic page") public void
 	 * the_user_is_in_addTraffic_page() { // Write code here that turns the phrase
 	 * above into concrete actions throw new cucumber.api.PendingException(); }
-	 */
+	 
 
 	@When("the user fill all the fields with invalid data")
 	public void the_user_fill_all_the_fields_with_invalid_data(io.cucumber.datatable.DataTable customerDetails) {
@@ -72,7 +71,7 @@ public class Addtariffsteps {
 
 	}
 
-	@Then("the error message shoul display")
+	@Then("the error message should display")
 	public void the_error_message_shoul_display() {
 		Assert.assertTrue(driver.findElement(By.tagName("h1")).isDisplayed());
 	}
@@ -87,34 +86,34 @@ public class Addtariffsteps {
 		Assert.assertTrue(driver.findElement(By.tagName("h1")).isDisplayed());
 	}
 
-	@Given("the user is in addcust page")
-	public void the_user_is_in_addcust_page() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\UsersLakshmi\\CloneTry\\eclipse-workspace\\cucumber\\driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("http://demo.guru99.com/telecom/");
-		driver.manage().window().maximize();
-		driver.findElement(By.xpath("(//a[contains(text(),'Add Customer')])[1]")).click();
-	}
-
-	@When("the user fill all the fields with valid data {string},{string},{string},{string},{string}")
-	public void the_user_fill_all_the_fields_with_valid_data(String firstname, String lastname, String email,
-			String address, String mobilenumber) {
-		//driver.findElement(By.xpath("(//input[@name='active'])[1]")).click();
-		driver.findElement(By.name("fname")).sendKeys(firstname);
-		driver.findElement(By.id("lname")).sendKeys(lastname);
-		driver.findElement(By.name("emailid")).sendKeys(email);
-		driver.findElement(By.name("addr")).sendKeys(address);
-		driver.findElement(By.id("telephoneno")).sendKeys(mobilenumber);
-
-	}
-
-	@Then("the customer id should generate")
-	public void the_customer_id_should_generate() {
-
-		Assert.assertTrue(driver.findElement(By.xpath("//b[contains(text(),'Customer')]")).isDisplayed());
-	}
-
+	
+	 * @Given("the user is in addcust page") public void
+	 * the_user_is_in_addcust_page() { System.setProperty("webdriver.chrome.driver",
+	 * "C:\\UsersLakshmi\\CloneTry\\eclipse-workspace\\cucumber\\driver\\chromedriver.exe"
+	 * ); driver = new ChromeDriver();
+	 * driver.get("http://demo.guru99.com/telecom/");
+	 * driver.manage().window().maximize();
+	 * driver.findElement(By.xpath("(//a[contains(text(),'Add Customer')])[1]")).
+	 * click(); }
+	 * 
+	 * @When("the user fill all the fields with valid data {string},{string},{string},{string},{string}"
+	 * ) public void the_user_fill_all_the_fields_with_valid_data(String firstname,
+	 * String lastname, String email, String address, String mobilenumber) {
+	 * //driver.findElement(By.xpath("(//input[@name='active'])[1]")).click();
+	 * driver.findElement(By.name("fname")).sendKeys(firstname);
+	 * driver.findElement(By.id("lname")).sendKeys(lastname);
+	 * driver.findElement(By.name("emailid")).sendKeys(email);
+	 * driver.findElement(By.name("addr")).sendKeys(address);
+	 * driver.findElement(By.id("telephoneno")).sendKeys(mobilenumber);
+	 * 
+	 * }
+	 * 
+	 * @Then("the customer id should generate") public void
+	 * the_customer_id_should_generate() {
+	 * 
+	 * Assert.assertTrue(driver.findElement(By.xpath(
+	 * "//b[contains(text(),'Customer')]")).isDisplayed()); }
+	 
 	@When("the user fill all the fields without valid data")
 	public void the_user_fill_all_the_fields_without_valid_data(io.cucumber.datatable.DataTable cDetails) {
 		List<String> cuslist = cDetails.asList(String.class);
@@ -199,3 +198,4 @@ public void the_error_should_generate_the_error_in_paybill_page() {
 }
 
 }
+*/

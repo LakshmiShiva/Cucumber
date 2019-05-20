@@ -21,12 +21,12 @@ Feature: Title of your feature
     Given the user is in addTrafic page
     When the user fill all the fields with invalid data
       | ab | ab | ab | ab | ab | ab | af |
-    When The user clicks the submit button
-    Then the error message should display
+    When The user clicks the submit button in tariff page
+    Then the error message should display in tariff page
 
   @sprint3
   Scenario: Blank field validation
     Given the user is in addTrafic page
     When the user left all the fields as blank
-    When The user clicks the submit button
-    Then the error message should display
+    When The user clicks the submit button in tariff page
+    Then the error message should display in tariff page

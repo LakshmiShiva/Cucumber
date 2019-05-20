@@ -4,8 +4,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src\\test\\resources\\feature",monochrome=true,strict=true,dryRun=false,glue="org.stepdefinition", plugin="html:target")
+@CucumberOptions(features="C:\\UsersLakshmi\\CloneTry\\eclipse-workspace\\cucumber\\src\\test\\resources\\feature\\pay.feature",dryRun=false,glue= {"org.stepdefinition"}, plugin= {"html:target2"})
 public class TestRunner {
-
 
 }
